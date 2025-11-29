@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Legal Team | Mutinda and Musyoka Company Advocates</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* CSS Variables for Brand Colors */
+      :root {
+        --navy: #002b5c;
+        --charcoal: #333333;
+        --gold: #b38b59;
+        --light-gray: #f8f9fa;
+        --white: #ffffff;
+        --mutindagreen: rgb(84, 102, 21);
+        --mutindamaroon: rgb(119, 4, 4);
+        --mutindagreen-light: rgba(84, 102, 21, 0.1);
+        --mutindamaroon-light: rgba(119, 4, 4, 0.1);
+        --mutindagreen-dark: rgb(67, 82, 17);
+        --mutindamaroon-dark: rgb(95, 3, 3);
+        --gradient-primary: linear-gradient(
+          135deg,
+          var(--mutindamaroon),
+          var(--mutindagreen)
+        );
+        --gradient-secondary: linear-gradient(
+          135deg,
+          var(--mutindagreen),
+          var(--mutindagreen-dark)
+        );
+      }
+
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+      }
+
+      body {
+        line-height: 1.7;
+        color: var(--charcoal);
+        background-color: var(--white);
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Garamond", "Times New Roman", serif;
+        color: var(--mutindamaroon);
+        margin-bottom: 1rem;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      p {
+        letter-spacing: 0.3px;
+        line-height: 1.7;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--gradient-secondary);
+        color: var(--white);
+        padding: 14px 32px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 6px 20px rgba(84, 102, 21, 0.3);
+        border: 2px solid transparent;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .btn:hover::before {
+        left: 100%;
+      }
+
+      .btn:hover {
+        background: linear-gradient(
+          135deg,
+          var(--mutindagreen-dark),
+          var(--mutindagreen)
+        );
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(84, 102, 21, 0.4);
+        border-color: rgba(84, 102, 21, 0.3);
+      }
+
+      .section {
+        padding: 100px 0;
+        position: relative;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative;
+        font-size: 2.8rem;
+        font-weight: 700;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: var(--gradient-primary);
+        border-radius: 2px;
+      }
+
+      .section-title::before {
+        content: "";
+        position: absolute;
+        bottom: -26px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background: var(--mutindagreen);
+        border-radius: 2px;
+        opacity: 0.6;
+      }
+
+      /* Header & Navigation */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+        height: 100px;
+        transition: all 0.4s ease;
+      }
+
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 12px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.02);
+      }
+
+      .logo img {
+        height: 90px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 35px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--charcoal);
+        font-size: 16px;
+        padding: 8px 2px;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+        position: relative;
+      }
+
+      nav ul li a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--gradient-primary);
+        transition: width 0.3s ease;
+      }
+
+      nav ul li a:hover::after,
+      nav ul li a.active::after {
+        width: 100%;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        color: var(--mutindamaroon);
+      }
+
+      nav ul li .btn {
+        background: linear-gradient(
+          135deg,
+          var(--mutindamaroon),
+          var(--mutindamaroon-dark)
+        );
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        box-shadow: 0 6px 20px rgba(119, 4, 4, 0.3);
+        margin-left: 10px;
+      }
+
+      nav ul li .btn:hover {
+        background: linear-gradient(
+          135deg,
+          var(--mutindamaroon-dark),
+          var(--mutindamaroon)
+        );
+        box-shadow: 0 10px 30px rgba(119, 4, 4, 0.4);
+      }
+
+      .mobile-menu {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: var(--charcoal);
+        transition: all 0.3s ease;
+        padding: 8px;
+        border-radius: 6px;
+      }
+
+      .mobile-menu:hover {
+        color: var(--mutindamaroon);
+        background: var(--mutindagreen-light);
+      }
+
+      /* Page Header */
+      .page-header {
+        background: linear-gradient(
+            135deg,
+            rgba(119, 4, 4, 0.85),
+            rgba(84, 102, 21, 0.75)
+          ),
+          url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: var(--white);
+        padding: 200px 0 100px;
+        text-align: center;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .page-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at center,
+          transparent 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
+      }
+
+      .page-header .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .page-header h1 {
+        font-size: 3.5rem;
+        color: var(--white);
+        margin-bottom: 25px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .breadcrumb {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .breadcrumb li {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        position: relative;
+      }
+
+      .breadcrumb li:not(:last-child)::after {
+        content: "›";
+        margin-left: 15px;
+        color: var(--mutindagreen);
+      }
+
+      .breadcrumb li a {
+        color: var(--mutindagreen);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+
+      .breadcrumb li a:hover {
+        color: var(--white);
+        background: rgba(84, 102, 21, 0.3);
+      }
+
+      /* Leadership Structure */
+      .leadership-structure {
+        background: linear-gradient(135deg, #ffffff 0%, var(--light-gray) 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .structure-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .structure-level {
+        margin-bottom: 60px;
+        position: relative;
+      }
+
+      .structure-level::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: -60px;
+        width: 2px;
+        background: var(--mutindagreen-light);
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      .structure-level:last-child::before {
+        display: none;
+      }
+
+      .level-title {
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .level-title h2 {
+        display: inline-block;
+        background: var(--white);
+        padding: 10px 30px;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        border: 2px solid var(--mutindagreen-light);
+        color: var(--mutindamaroon);
+        font-size: 1.5rem;
+      }
+
+      .level-members {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Team Members */
+      .team-members {
+        background: linear-gradient(
+          135deg,
+          var(--mutindamaroon) 0%,
+          var(--mutindamaroon-dark) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .team-members .section-title {
+        color: var(--white);
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+      }
+
+      .team-member {
+        background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .team-member::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-primary);
+        z-index: 2;
+      }
+
+      .team-member:hover {
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+      }
+
+      .member-image {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .member-image::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+        z-index: 1;
+      }
+
+      .member-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.6s ease;
+      }
+
+      .team-member:hover .member-image img {
+        transform: scale(1.1);
+      }
+
+      .member-info {
+        padding: 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      .member-name {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+        color: var(--mutindamaroon);
+        font-weight: 700;
+      }
+
+      .member-position {
+        color: var(--mutindagreen);
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .member-position::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 2px;
+        background: var(--mutindagreen);
+        border-radius: 1px;
+      }
+
+      .member-bio {
+        font-size: 1rem;
+        color: var(--charcoal);
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .member-admission {
+        display: inline-block;
+        background: var(--mutindagreen-light);
+        color: var(--mutindamaroon);
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .member-expertise {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 15px;
+      }
+
+      .expertise-tag {
+        background: var(--mutindamaroon-light);
+        color: var(--mutindamaroon);
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+
+      /* Structure Member Cards */
+      .structure-member {
+        background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
+        border-radius: 16px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        width: 280px;
+        position: relative;
+      }
+
+      .structure-member::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-primary);
+        border-radius: 16px 16px 0 0;
+      }
+
+      .structure-member:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(119, 4, 4, 0.15);
+        border-color: var(--mutindagreen-light);
+      }
+
+      .structure-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        border: 4px solid var(--mutindagreen-light);
+        position: relative;
+      }
+
+      .structure-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .structure-member:hover .structure-image img {
+        transform: scale(1.1);
+      }
+
+      .structure-name {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+        color: var(--mutindamaroon);
+        font-weight: 700;
+      }
+
+      .structure-role {
+        color: var(--mutindagreen);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+      .structure-desc {
+        color: var(--charcoal);
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      /* CTA Section */
+      .cta {
+        background: var(--gradient-primary);
+        color: var(--white);
+        text-align: center;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 70%
+        );
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .cta h2 {
+        color: var(--white);
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 2;
+      }
+
+      .cta p {
+        max-width: 700px;
+        margin: 0 auto 40px;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.7;
+        position: relative;
+        z-index: 2;
+      }
+
+      .cta .btn {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: var(--white);
+        font-size: 1.1rem;
+        padding: 16px 45px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .cta .btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Footer */
+      footer {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: var(--white);
+        padding: 80px 0 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 50px;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .footer-logo img {
+        width: 200px;
+        height: auto;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        transition: all 0.4s ease;
+      }
+
+      .footer-logo:hover img {
+        transform: scale(1.05);
+      }
+
+      .footer-about p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #ccc;
+        max-width: 320px;
+        margin-bottom: 25px;
+      }
+
+      .footer-links h3,
+      .footer-services h3,
+      .footer-contact h3 {
+        color: var(--mutindagreen);
+        margin-bottom: 25px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 12px;
+      }
+
+      .footer-links h3::after,
+      .footer-services h3::after,
+      .footer-contact h3::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: var(--mutindagreen);
+        border-radius: 2px;
+      }
+
+      .footer-links ul,
+      .footer-services ul,
+      .footer-contact ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-links ul li,
+      .footer-services ul li,
+      .footer-contact ul li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+      }
+
+      .footer-links a,
+      .footer-services a,
+      .footer-contact a {
+        color: #ccc;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .footer-links a:hover,
+      .footer-services a:hover,
+      .footer-contact a:hover {
+        color: var(--mutindagreen);
+        padding-left: 5px;
+      }
+
+      .footer-contact ul li i {
+        margin-right: 12px;
+        color: var(--mutindagreen);
+        font-size: 1.1rem;
+        width: 20px;
+        text-align: center;
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: #999;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        position: relative;
+        z-index: 2;
+      }
+
+      .credit {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #777;
+      }
+
+      .credit span {
+        color: #e74c3c;
+      }
+
+      .credit a {
+        color: var(--mutindagreen);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .credit a:hover {
+        color: var(--mutindamaroon);
+        text-decoration: underline;
+      }
+
+      /* WhatsApp Float */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: linear-gradient(135deg, #25d366, #128c7e);
+        color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        z-index: 1000;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation: pulse 2s infinite;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.15) rotate(5deg);
+        box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(180deg);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        50% {
+          box-shadow: 0 8px 35px rgba(37, 211, 102, 0.8);
+        }
+        100% {
+          box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 1200px) {
+        .section-title {
+          font-size: 2.5rem;
+        }
+
+        .page-header h1 {
+          font-size: 3rem;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .team-grid {
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 30px;
+        }
+
+        .level-members {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          display: none;
+          position: absolute;
+          top: 100px;
+          left: 0;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.98);
+          backdrop-filter: blur(15px);
+          flex-direction: column;
+          padding: 30px 20px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          gap: 0;
+        }
+
+        nav ul.active {
+          display: flex;
+        }
+
+        nav ul li {
+          margin: 12px 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        nav ul li a {
+          display: block;
+          padding: 12px 0;
+          font-size: 1.1rem;
+        }
+
+        .mobile-menu {
+          display: block;
+        }
+
+        .page-header {
+          padding: 150px 0 80px;
+          min-height: 60vh;
+        }
+
+        .page-header h1 {
+          font-size: 2.2rem;
+        }
+
+        .section {
+          padding: 70px 0;
+        }
+
+        .section-title {
+          font-size: 2rem;
+          margin-bottom: 40px;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .whatsapp-float {
+          width: 60px;
+          height: 60px;
+          font-size: 1.7rem;
+          bottom: 20px;
+          right: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .page-header h1 {
+          font-size: 1.8rem;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .btn {
+          padding: 12px 25px;
+          font-size: 0.95rem;
+        }
+
+        .team-member {
+          padding: 25px 20px;
+        }
+
+        .structure-member {
+          width: 100%;
+          max-width: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="musyoka&mutinda logo.png"
+            alt="Musyoka & Mutinda Advocates Logo"
+            class="logo-img"
+          />
+        </a>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Legal Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html" class="active">Our Team</a></li>
+            <li>
+              <a href="contact.html" class="btn">Schedule Consultation</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Legal Team</h1>
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>|</li>
+          <li>Our Team</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Leadership Structure -->
+    <section class="section leadership-structure">
+      <div class="container">
+        <h1 class="section-title">Leadership Structure</h1>
+        <div class="structure-container">
+          <!-- Partners Level -->
+          <div class="structure-level">
+            <div class="level-title">
+              <h2>Managing Partners</h2>
+            </div>
+            <div class="level-members">
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Faith Mutinda"
+                  />
+                </div>
+                <h3 class="structure-name">Faith Mutinda</h3>
+                <p class="structure-role">Managing Partner</p>
+                <p class="structure-desc">
+                  Admitted to the Bar in 2011. Over a decade of excellence in
+                  litigation and corporate law with a focus on strategic legal
+                  solutions.
+                </p>
+              </div>
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594824436389-78c0e8c46f74?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Naomi Musyoka"
+                  />
+                </div>
+                <h3 class="structure-name">Naomi Musyoka</h3>
+                <p class="structure-role">Managing Partner</p>
+                <p class="structure-desc">
+                  Admitted to the Bar in 2014. Specializes in commercial
+                  transactions and dispute resolution with a track record of
+                  successful outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Associates Level -->
+          <div class="structure-level">
+            <div class="level-title">
+              <h2>Senior Associates</h2>
+            </div>
+            <div class="level-members">
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Kelvin"
+                  />
+                </div>
+                <h3 class="structure-name">Kelvin</h3>
+                <p class="structure-role">Senior Associate</p>
+                <p class="structure-desc">
+                  Expert in corporate law and commercial litigation with a keen
+                  eye for detail and strategic case management.
+                </p>
+              </div>
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Eleazor"
+                  />
+                </div>
+                <h3 class="structure-name">Eleazor</h3>
+                <p class="structure-role">Senior Associate</p>
+                <p class="structure-desc">
+                  Specializes in real estate law and conveyancing with extensive
+                  experience in property transactions and title disputes.
+                </p>
+              </div>
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Everlyn Muia"
+                  />
+                </div>
+                <h3 class="structure-name">Everlyn Muia</h3>
+                <p class="structure-role">Senior Associate</p>
+                <p class="structure-desc">
+                  Focuses on family law and succession matters, providing
+                  compassionate yet effective legal representation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pupillage Level -->
+          <div class="structure-level">
+            <div class="level-title">
+              <h2>Consulting Partners</h2>
+            </div>
+            <div class="level-members">
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Irene"
+                  />
+                </div>
+                <h3 class="structure-name">Irene</h3>
+                <p class="structure-role">Consulting Partner</p>
+                <p class="structure-desc">
+                  Provides essential support in legal research and client
+                  consultations while developing expertise in various practice
+                  areas.
+                </p>
+              </div>
+              <div class="structure-member">
+                <div class="structure-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Jerusha"
+                  />
+                </div>
+                <h3 class="structure-name">Jerusha</h3>
+                <p class="structure-role">Consulting Partner</p>
+                <p class="structure-desc">
+                  Assists in case preparation and client management, bringing
+                  fresh perspectives to our legal practice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="section team-members">
+      <div class="container">
+        <h1 class="section-title">Meet Our Legal Experts</h1>
+        <div class="team-grid">
+          <!-- Faith Mutinda -->
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Faith Mutinda"
+              />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Faith Mutinda</h3>
+              <p class="member-position">Managing Partner</p>
+              <span class="member-admission">Admitted to the Bar: 2011</span>
+              <p class="member-bio">
+                With over a decade of distinguished legal practice, Faith brings
+                exceptional expertise in complex litigation and corporate
+                advisory. Her strategic approach to legal challenges has yielded
+                numerous successful outcomes for clients across various sectors.
+              </p>
+              <div class="member-expertise">
+                <span class="expertise-tag">Litigation</span>
+                <span class="expertise-tag">Corporate Law</span>
+                <span class="expertise-tag">Commercial Disputes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Naomi Musyoka -->
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1594824436389-78c0e8c46f74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Naomi Musyoka"
+              />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Naomi Musyoka</h3>
+              <p class="member-position">Managing Partner</p>
+              <span class="member-admission">Admitted to the Bar: 2014</span>
+              <p class="member-bio">
+                Naomi combines sharp legal acumen with business insight to
+                deliver comprehensive solutions for corporate clients. Her
+                expertise spans commercial transactions, contract negotiation,
+                and alternative dispute resolution mechanisms.
+              </p>
+              <div class="member-expertise">
+                <span class="expertise-tag">Commercial Law</span>
+                <span class="expertise-tag">Contract Negotiation</span>
+                <span class="expertise-tag">Dispute Resolution</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kelvin -->
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Kelvin"
+              />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Kelvin</h3>
+              <p class="member-position">Senior Associate</p>
+              <p class="member-bio">
+                Kelvin's meticulous approach to corporate law and commercial
+                litigation ensures thorough case preparation and strategic
+                advocacy. His dedication to client success is reflected in his
+                consistent track record of favorable outcomes.
+              </p>
+              <div class="member-expertise">
+                <span class="expertise-tag">Corporate Advisory</span>
+                <span class="expertise-tag">Commercial Litigation</span>
+                <span class="expertise-tag">Legal Research</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eleazor -->
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Eleazor"
+              />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Eleazor</h3>
+              <p class="member-position">Senior Associate</p>
+              <p class="member-bio">
+                Specializing in real estate law, Eleazor brings extensive
+                knowledge of property transactions, title verification, and
+                conveyancing processes. His attention to detail ensures seamless
+                property transfers for clients.
+              </p>
+              <div class="member-expertise">
+                <span class="expertise-tag">Real Estate Law</span>
+                <span class="expertise-tag">Conveyancing</span>
+                <span class="expertise-tag">Title Disputes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Everlyn Muia -->
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Everlyn Muia"
+              />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Everlyn Muia</h3>
+              <p class="member-position">Senior Associate</p>
+              <p class="member-bio">
+                Everlyn provides compassionate yet effective representation in
+                family law matters, including divorce, child custody, and
+                succession planning. Her empathetic approach helps clients
+                navigate emotionally challenging legal processes.
+              </p>
+              <div class="member-expertise">
+                <span class="expertise-tag">Family Law</span>
+                <span class="expertise-tag">Succession</span>
+                <span class="expertise-tag">Child Custody</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consulting Partners -->
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Irene & Jerusha"
+              />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Irene & Jerusha</h3>
+              <p class="member-position">Consulting Partners</p>
+              <p class="member-bio">
+                Our consulting partners provide invaluable support in legal
+                research, case preparation, and client management. Their
+                dedication and fresh perspectives contribute significantly to
+                our firm's comprehensive legal services.
+              </p>
+              <div class="member-expertise">
+                <span class="expertise-tag">Legal Research</span>
+                <span class="expertise-tag">Case Preparation</span>
+                <span class="expertise-tag">Client Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Work With Our Expert Legal Team?</h2>
+        <p>
+          Contact us today to schedule a consultation with one of our
+          experienced advocates and discover how we can help protect your rights
+          and interests.
+        </p>
+        <a href="contact.html" class="btn">Schedule a Consultation</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <a href="index.html" class="footer-logo">
+              <img
+                src="musyoka&mutinda logo.png"
+                alt="Mutinda & Musyoka Advocates Logo"
+              />
+            </a>
+            <p>
+              Providing exceptional legal services in Machakos and throughout
+              Kenya for over 17 years. Your trusted partners for all legal
+              matters.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Legal Insights</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="team.html">Our Team</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="services.html#litigation"
+                  >Litigation & Dispute Resolution</a
+                >
+              </li>
+              <li>
+                <a href="services.html#corporate">Corporate & Commercial Law</a>
+              </li>
+              <li>
+                <a href="services.html#real-estate"
+                  >Conveyancing & Real Estate</a
+                >
+              </li>
+              <li>
+                <a href="services.html#family">Family & Succession Law</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://maps.app.goo.gl/oH6qqLpqKJx3jac66">
+                  Hebron Complex, First Floor, Machakos</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+254716464683"> +254716464683</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@mutindaandmusyoka.co.ke">
+                  info@mutindaandmusyoka.co.ke</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2025 Mutinda and Musyoka Company Advocates. All Rights
+            Reserved.
+          </p>
+          <p class="credit">
+            Crafted with <span>❤</span> by
+            <a
+              href="https://codewithkaranja.github.io/createmodafrica/"
+              target="_blank"
+              rel="noopener"
+            >
+              CreateModAfrica
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/254716464683" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+      // Mobile menu functionality
+      document
+        .querySelector(".mobile-menu")
+        .addEventListener("click", function () {
+          const nav = document.querySelector("nav ul");
+          nav.classList.toggle("active");
+        });
+
+      // Team member hover effects
+      document.querySelectorAll(".team-member").forEach((member) => {
+        member.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-15px) scale(1.02)";
+        });
+
+        member.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+        });
+      });
+
+      // Structure member hover effects
+      document.querySelectorAll(".structure-member").forEach((member) => {
+        member.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-8px)";
+        });
+
+        member.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0)";
+        });
+      });
+    </script>
+  </body>
+</html>

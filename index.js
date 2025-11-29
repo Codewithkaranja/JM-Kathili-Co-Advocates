@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const whatsappBtn = document.getElementById("whatsapp-button");
   const whatsappChat = document.getElementById("whatsapp-chatbot");
 
-  const whatsappNumber = "254723562484";
+  const whatsappNumber = "254716464683";
 
   /* ====== MOBILE MENU TOGGLE ====== */
   mobileMenu?.addEventListener("click", () => navMenu.classList.toggle("active"));
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     bgIndex = (bgIndex + 1) % bgImages.length;
   };
   changeHeroBg();
-  setInterval(changeHeroBg, 5000);
+  setInterval(changeHeroBg, 4000);
 
   /* ====== TYPEWRITER EFFECT ====== */
   const texts = [

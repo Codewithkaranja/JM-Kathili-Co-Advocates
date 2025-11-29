@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Understanding Contract Law: A Comprehensive Guide | Law Insights
+    </title>
+    <style>
+      :root {
+        --navy: #002b5c;
+        --charcoal: #333333;
+        --gold: #b38b59;
+        --light-gray: #f8f9fa;
+        --white: #ffffff;
+        --mutindagreen: rgb(84, 102, 21);
+        --mutindamaroon: rgb(119, 4, 4);
+        --mutindagreen-light: rgba(84, 102, 21, 0.1);
+        --mutindamaroon-light: rgba(119, 4, 4, 0.1);
+        --mutindagreen-dark: rgb(67, 82, 17);
+        --mutindamaroon-dark: rgb(95, 3, 3);
+        --gradient-primary: linear-gradient(
+          135deg,
+          var(--mutindamaroon),
+          var(--mutindagreen)
+        );
+        --gradient-secondary: linear-gradient(
+          135deg,
+          var(--mutindagreen),
+          var(--mutindagreen-dark)
+        );
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: var(--light-gray);
+        color: var(--charcoal);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header Styles */
+      header {
+        background: var(--gradient-primary);
+        color: var(--white);
+        padding: 1rem 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo span {
+        color: var(--gold);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: var(--gold);
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        padding: 1rem 0;
+        background-color: var(--white);
+        margin-bottom: 2rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .breadcrumb a {
+        color: var(--mutindamaroon);
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      /* Main Content */
+      .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .article-content {
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .article-header {
+        margin-bottom: 1.5rem;
+      }
+
+      .article-meta {
+        display: flex;
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta span {
+        margin-right: 1rem;
+      }
+
+      .article-category {
+        background-color: var(--mutindagreen-light);
+        color: var(--mutindagreen);
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .article-title {
+        font-size: 2.2rem;
+        color: var(--navy);
+        margin-bottom: 1rem;
+        line-height: 1.3;
+      }
+
+      .article-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+      }
+
+      .article-body {
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .article-body h2 {
+        color: var(--mutindamaroon);
+        margin: 2rem 0 1rem;
+        font-size: 1.6rem;
+      }
+
+      .article-body h3 {
+        color: var(--mutindagreen);
+        margin: 1.5rem 0 0.8rem;
+        font-size: 1.3rem;
+      }
+
+      .article-body p {
+        margin-bottom: 1.2rem;
+      }
+
+      .article-body blockquote {
+        border-left: 4px solid var(--mutindagreen);
+        padding-left: 1.5rem;
+        margin: 1.5rem 0;
+        font-style: italic;
+        color: #555;
+      }
+
+      .article-body ul,
+      .article-body ol {
+        margin: 1rem 0 1rem 2rem;
+      }
+
+      .article-body li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .sidebar-widget {
+        background-color: var(--white);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .widget-title {
+        font-size: 1.3rem;
+        color: var(--navy);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--mutindagreen-light);
+      }
+
+      .related-articles {
+        list-style: none;
+      }
+
+      .related-articles li {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .related-articles li:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      .related-articles a {
+        color: var(--charcoal);
+        text-decoration: none;
+        font-weight: 500;
+        display: block;
+        transition: color 0.3s;
+      }
+
+      .related-articles a:hover {
+        color: var(--mutindamaroon);
+      }
+
+      .related-articles .article-meta {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+      }
+
+      .categories-list {
+        list-style: none;
+      }
+
+      .categories-list li {
+        margin-bottom: 0.8rem;
+      }
+
+      .categories-list a {
+        color: var(--charcoal);
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        transition: color 0.3s;
+      }
+
+      .categories-list a:hover {
+        color: var(--mutindamaroon);
+      }
+
+      .categories-list .count {
+        background-color: var(--mutindagreen-light);
+        color: var(--mutindagreen);
+        padding: 0.2rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.8rem;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--gradient-secondary);
+        color: var(--white);
+        padding: 3rem 0 1.5rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        color: var(--gold);
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 0.7rem;
+      }
+
+      .footer-links a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: var(--gold);
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .main-content {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav ul {
+          margin-top: 1rem;
+          justify-content: center;
+        }
+
+        nav ul li {
+          margin: 0 0.8rem;
+        }
+
+        .article-title {
+          font-size: 1.8rem;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-content">
+        <div class="logo">Law<span>Insights</span></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb container">
+      <a href="index.html">Home</a> &gt;
+      <a href="categories.html">Contract Law</a> &gt; Understanding Contract
+      Law: A Comprehensive Guide
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <!-- Article Content -->
+      <div class="article-content">
+        <div class="article-header">
+          <div class="article-meta">
+            <span>By Johnathan Wright, Esq.</span>
+            <span>May 15, 2023</span>
+            <span class="article-category">Contract Law</span>
+          </div>
+          <h1 class="article-title">
+            Understanding Contract Law: A Comprehensive Guide
+          </h1>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Contract Law"
+          class="article-image"
+        />
+
+        <div class="article-body">
+          <p>
+            Contract law forms the foundation of commercial transactions and
+            personal agreements in our society. It governs the exchange of
+            promises between parties and provides remedies when those promises
+            are broken. Understanding the basics of contract law is essential
+            for anyone engaging in business or significant personal
+            transactions.
+          </p>
+
+          <h2>What is a Contract?</h2>
+          <p>
+            A contract is a legally binding agreement between two or more
+            parties that creates obligations enforceable by law. For a contract
+            to be valid, it must contain certain essential elements:
+          </p>
+
+          <h3>Essential Elements of a Contract</h3>
+          <ul>
+            <li>
+              <strong>Offer:</strong> A clear, definite proposal made by one
+              party to another
+            </li>
+            <li>
+              <strong>Acceptance:</strong> An unqualified agreement to the terms
+              of the offer
+            </li>
+            <li>
+              <strong>Consideration:</strong> Something of value exchanged
+              between the parties
+            </li>
+            <li>
+              <strong>Intention to Create Legal Relations:</strong> The parties
+              must intend for the agreement to be legally binding
+            </li>
+            <li>
+              <strong>Capacity:</strong> The parties must have the legal ability
+              to enter into a contract
+            </li>
+            <li>
+              <strong>Legality:</strong> The purpose of the contract must be
+              legal
+            </li>
+          </ul>
+
+          <h2>Types of Contracts</h2>
+          <p>
+            Contracts can be categorized in various ways based on their
+            formation, validity, and performance:
+          </p>
+
+          <h3>Based on Formation</h3>
+          <ul>
+            <li>
+              <strong>Express Contracts:</strong> Terms are explicitly stated,
+              either orally or in writing
+            </li>
+            <li>
+              <strong>Implied Contracts:</strong> Terms are inferred from the
+              parties' conduct
+            </li>
+            <li>
+              <strong>Quasi-Contracts:</strong> Imposed by law to prevent unjust
+              enrichment
+            </li>
+          </ul>
+
+          <h3>Based on Validity</h3>
+          <ul>
+            <li>
+              <strong>Valid Contracts:</strong> Contain all essential elements
+              and are enforceable
+            </li>
+            <li>
+              <strong>Void Contracts:</strong> Not enforceable from the
+              beginning
+            </li>
+            <li>
+              <strong>Voidable Contracts:</strong> One party has the option to
+              void the contract
+            </li>
+            <li>
+              <strong>Unenforceable Contracts:</strong> Valid but cannot be
+              enforced due to technical defects
+            </li>
+          </ul>
+
+          <blockquote>
+            "The law of contract is not the whole law of agreements, nor is it
+            the whole law of obligations. It is the law of those agreements
+            which create obligations, and those obligations which have their
+            source in agreement."
+            <footer>- Sir Frederick Pollock</footer>
+          </blockquote>
+
+          <h2>Contract Formation Process</h2>
+          <p>
+            The process of forming a contract typically involves several stages:
+          </p>
+
+          <h3>1. Negotiation</h3>
+          <p>
+            Parties discuss terms and conditions before reaching an agreement.
+            During this stage, parties may make invitations to treat, which are
+            not offers but indications of willingness to negotiate.
+          </p>
+
+          <h3>2. Offer</h3>
+          <p>
+            One party makes a definite proposal to another, indicating
+            willingness to enter into a contract on specific terms. The offer
+            must be communicated to the offeree and must be certain in its
+            terms.
+          </p>
+
+          <h3>3. Acceptance</h3>
+          <p>
+            The offeree agrees to the terms of the offer without modification.
+            Acceptance must be communicated to the offeror, unless the offer
+            specifies another method of acceptance.
+          </p>
+
+          <h3>4. Consideration</h3>
+          <p>
+            Each party must provide something of value. Consideration can be a
+            promise, an act, or forbearance from acting. It must be sufficient
+            but need not be adequate.
+          </p>
+
+          <h2>Breach of Contract and Remedies</h2>
+          <p>
+            When a party fails to perform their contractual obligations, it
+            constitutes a breach of contract. The non-breaching party may seek
+            various remedies:
+          </p>
+
+          <h3>Common Remedies</h3>
+          <ul>
+            <li>
+              <strong>Damages:</strong> Monetary compensation for losses
+              suffered
+            </li>
+            <li>
+              <strong>Specific Performance:</strong> Court order requiring the
+              breaching party to perform their obligations
+            </li>
+            <li>
+              <strong>Rescission:</strong> Cancellation of the contract and
+              restoration to pre-contract position
+            </li>
+            <li>
+              <strong>Injunction:</strong> Court order prohibiting a party from
+              doing something
+            </li>
+          </ul>
+
+          <h2>Conclusion</h2>
+          <p>
+            Contract law provides the framework for countless transactions in
+            our daily lives, from simple purchases to complex business deals.
+            Understanding its principles helps individuals and businesses
+            navigate their obligations and rights effectively. While this guide
+            covers the fundamentals, specific contractual situations often
+            require professional legal advice to ensure proper protection of
+            interests.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Related Articles -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Related Articles</h3>
+          <ul class="related-articles">
+            <li>
+              <a href="#"
+                >The Statute of Frauds: When Contracts Must Be in Writing</a
+              >
+              <div class="article-meta">
+                <span>Contract Law</span>
+                <span>Apr 28, 2023</span>
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                >Understanding Contractual Capacity: Who Can Enter Into
+                Contracts?</a
+              >
+              <div class="article-meta">
+                <span>Contract Law</span>
+                <span>Mar 12, 2023</span>
+              </div>
+            </li>
+            <li>
+              <a href="#">Remedies for Breach of Contract: A Practical Guide</a>
+              <div class="article-meta">
+                <span>Contract Law</span>
+                <span>Feb 5, 2023</span>
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                >The Parol Evidence Rule: What It Means for Your Contracts</a
+              >
+              <div class="article-meta">
+                <span>Contract Law</span>
+                <span>Jan 18, 2023</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Categories</h3>
+          <ul class="categories-list">
+            <li>
+              <a href="#">Contract Law <span class="count">12</span></a>
+            </li>
+            <li>
+              <a href="#">Criminal Law <span class="count">8</span></a>
+            </li>
+            <li>
+              <a href="#">Family Law <span class="count">6</span></a>
+            </li>
+            <li>
+              <a href="#">Corporate Law <span class="count">10</span></a>
+            </li>
+            <li>
+              <a href="#">Intellectual Property <span class="count">7</span></a>
+            </li>
+            <li>
+              <a href="#">Constitutional Law <span class="count">5</span></a>
+            </li>
+            <li>
+              <a href="#">Environmental Law <span class="count">4</span></a>
+            </li>
+            <li>
+              <a href="#">Tax Law <span class="count">9</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Law Insights</h3>
+            <p>
+              Your trusted source for comprehensive legal information and
+              insights across all areas of law.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Popular Categories</h3>
+            <ul class="footer-links">
+              <li><a href="#">Contract Law</a></li>
+              <li><a href="#">Criminal Law</a></li>
+              <li><a href="#">Family Law</a></li>
+              <li><a href="#">Corporate Law</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+              <li>Email: info@lawinsights.com</li>
+              <li>Phone: (555) 123-4567</li>
+              <li>Address: 123 Legal Way, Suite 100</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Law Insights. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
