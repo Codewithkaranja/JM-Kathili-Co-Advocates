@@ -580,7 +580,8 @@ nav ul li .btn:hover {
 }
 
 .team .section-title {
-  color:var(--mutindagreen-dark);
+  color: rgb(233, 201, 24);
+  font-weight: 400;
   position: relative;
   z-index: 2;
 }
@@ -702,6 +703,10 @@ nav ul li .btn:hover {
   position: relative;
   color: var(--white);
 }
+.values .section-title{
+  color: rgb(233, 201, 24);
+  font-weight: 400;
+}
 
 
 .values-grid {
@@ -775,7 +780,8 @@ nav ul li .btn:hover {
 }
 
 .history .section-title {
-  color: var(--mutindagreen-dark);
+  color: rgb(233, 201, 24);
+  font-weight: 400;
 }
 
 .timeline {
