@@ -738,7 +738,7 @@ nav ul li .btn:hover {
   font-size: 1rem;
 }
 
-/* Testimonials Section */
+/* Testimonials Section 
 .testimonials {
   background: linear-gradient(135deg, var(--mutindagreen-light) 0%, var(--mutindamaroon-light) 100%);
   position: relative;
@@ -783,7 +783,7 @@ nav ul li .btn:hover {
   font-size: 1.1rem;
   position: relative;
   z-index: 2;
-}
+}*/
 
 /* CTA Section */
 /* CTA Section */
@@ -1296,36 +1296,125 @@ footer {
   background: var(--mutindagreen);
 }
 
-/* Client Logo Slider Styling */
+/* ==========================
+   Client Logo Slider Styling
+========================== */
+/* ==========================
+   Premium Client Logo Slider
+========================== */
+/* ==========================
+   Premium Client Logo Slider
+========================== */
+#clients {
+  margin-bottom: 60px;
+  padding: 100px 0;
+  background: linear-gradient(
+      135deg,
+      rgba(119, 4, 4, 0.65),
+      rgba(84, 102, 21, 0.35)
+    ),
+    url("https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Soft animated overlay for elegance */
+#clients::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 70%);
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Swiper container */
+.clientsSwiper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
 .clientsSwiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
+  transition: transform 0.3s ease;
+  animation: floatLogo 6s ease-in-out infinite;
 }
 
+/* Logo styling */
 .clientsSwiper .swiper-slide img {
-  max-width: 130px;  /* adjust size here (100‒150px works well) */
+  max-width: 180px; /* increased size */
   height: auto;
   object-fit: contain;
-  filter: grayscale(20%); /* optional: slight corporate gray tone */
+  filter: grayscale(20%);
   opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
 }
 
 .clientsSwiper .swiper-slide img:hover {
-  transform: scale(1.08);
+  transform: scale(1.15);
   opacity: 1;
   filter: grayscale(0%);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-#clients {
-      margin-bottom: 60px;
-          background: linear-gradient(rgba(128, 0, 0, 0.575), var(--mutindamaroon-light)),
-          url("https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?auto=format&fit=crop&w=2070&q=80");
-    
-  padding: 50px 0; /* optional */
+/* Floating animation for logos */
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
+
+/* Optional Swiper arrows */
+.clientsSwiper .swiper-button-next,
+.clientsSwiper .swiper-button-prev {
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+.clientsSwiper .swiper-button-next:hover,
+.clientsSwiper .swiper-button-prev:hover {
+  color: var(--mutindamaroon);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  #clients {
+    padding: 80px 0;
+  }
+
+  .clientsSwiper .swiper-slide img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  #clients {
+    padding: 60px 0;
+  }
+
+  .clientsSwiper .swiper-slide img {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clientsSwiper .swiper-slide img {
+    max-width: 100px;
+  }
+}
+
 
 
 /* ====== SERVICE CARD ====== */
